@@ -21,7 +21,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import FileUpload from "@/components/fileUpload";
+import { FileUpload } from "../fileUpload";
+
 
  const formSchema = z.object({
     name: z.string().min(1, {
@@ -67,7 +68,7 @@ export default function IntialModel(){
             </DialogDescription>
             </DialogHeader >
             <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit())} 
+                <form onSubmit={form.handleSubmit(onSubmit)} 
                 className='space-y-8'>
                     <div className='space-y-8 px-6'>
                         <div className='flex items-center justify-center text-center' >
@@ -78,7 +79,7 @@ export default function IntialModel(){
                                 <FormItem>
                                     <FormControl>
                                         <FileUpload
-                                        endpoint='serverImage'
+                                        endpoint="serverImage" 
                                         value={field.value}
                                         onChange={field.onChange}
                                         />
@@ -126,5 +127,4 @@ export default function IntialModel(){
       
     )
 }
-
 
