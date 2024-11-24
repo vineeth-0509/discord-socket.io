@@ -34,6 +34,7 @@ export default function RootLayout({
      enableSystem={false}
      storageKey="discord-theme"
      >
+      
      {children}
      </ThemeProvider>
   </body>

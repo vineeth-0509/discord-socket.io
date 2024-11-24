@@ -38,3 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 uploadanything
 uploadDropZone
+uuid 
+// https://chatgpt.com/share/67435630-1bc4-800f-93af-3908e965a7e1
+
+https://chatgpt.com/share/67435630-1bc4-800f-93af-3908e965a7e1

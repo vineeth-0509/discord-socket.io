@@ -15,7 +15,7 @@ export const ourFileRouter = {
   .middleware(()=> handleAuth())
   .onUploadComplete(()=> {}),
   messageFile: f(["image","pdf"])
-  .middleware(()=> handleAuth())
+  .middleware(()=> `handleAuth`())
   .onUploadComplete(()=> {})
   
 } satisfies FileRouter;
